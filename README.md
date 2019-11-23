@@ -20,3 +20,5 @@ In my interface, following requirements have been met:
 * A button must be included in the user interface that allows the player to reset the game to an initial starting position.
 * When the game is over, the user interface must visually display that the game is over.
 * If the player wins the game, the user interface must visually display that the game is won.
+
+![interfacescreenshot](https://github.com/caoyr03/2048game/blob/master/interface.png)
