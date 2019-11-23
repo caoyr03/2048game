@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2048</title>
+        <script src='engine/game.js' type="module"></script>
+        <link rel='stylesheet' href='style.css'/>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        
+        <script src='render.js' type="module"></script>
+
+        <div id="root">
+            <section class = 'header'>
+                <h1>2048&nbsp</h1>
+                <h2 class="subtitle">Come and enjoy our game! Try get your 2048 tile!</h2>
+                <p id='how-to-play'>How to play: Use your keyboard to move the tiles. When two tiles with the same number touch, they merge into one!</p>
+                <div>
+                <div class='scoreboard' >
+                        <p>Score</p>
+                        <p id='score'>0</p>
+                </div>
+                <div class='control'>
+                    <button id='Reset'>Reset</button>
+                </div>
+                </div>
+            </section>
+            <section class='game-view'>
+                    <div class="grid-container">
+                            <div class="grid-row">
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                            </div>
+                            <div class="grid-row">
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                            </div>
+                            <div class="grid-row">
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                            </div>
+                            <div class="grid-row">
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                              <div class="grid-cell"></div>
+                            </div>
+                    </div>
+                    <div class="tile-container"></div>
+
+            </section>
+        </div>
+    </body>
+</html>

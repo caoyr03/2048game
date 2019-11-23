@@ -1,0 +1,310 @@
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    display: block;
+    float: left; }
+    h1.title a {
+      text-decoration: none; }
+h2.subtitle {
+    font-size: 1em;
+    margin: 0; }
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.65;
+  }
+.scoreboard{
+  text-align: right; 
+  background: #bbada0;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-top: 8px;
+  text-align: center; }
+#score{
+    font-size: 25px;
+    color: white;
+}
+.control{
+    display:inline;
+}
+#Reset{
+background: #bbada0;
+font-size: 25px;
+  font-weight: bold;
+  border-radius: 3px;
+  width: 90px;
+  padding: 10px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+  .grid-container {
+    padding: 12px;
+    position: absolute;
+    z-index: 1; 
+    background: #bbada0;
+    border-radius: 6px;}
+  
+  .grid-row {
+    margin-bottom: 15px; }
+    .grid-row:last-child {
+      margin-bottom: 0; }
+    .grid-row:after {
+      content: "";
+      display: block;
+      clear: both; }
+  
+  .grid-cell {
+    width: 106.25px;
+    height: 106.25px;
+    margin-right: 15px;
+    float: left;
+    border-radius: 3px;
+    background: rgba(238, 228, 218, 0.35); }
+    .grid-cell:last-child {
+      margin-right: 0; }
+
+.tile-container {
+  position: absolute;
+  z-index: 2; 
+  padding: 12px;}   
+    
+
+#tile-position-1-1 {
+  width: 107px;
+  height: 107px;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  transform: translate(0px, 0px); }
+#tile-position-1-2 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(0px, 121px);
+  -moz-transform: translate(0px, 121px);
+  transform: translate(0px, 121px); }
+#tile-position-1-3 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(0px, 242px);
+  -moz-transform: translate(0px, 242px);
+  transform: translate(0px, 242px); }
+#tile-position-1-4 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(0px, 363px);
+  -moz-transform: translate(0px, 363px);
+  transform: translate(0px, 363px); }
+#tile-position-2-1 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(121px, 0px);
+  -moz-transform: translate(121px, 0px);
+  transform: translate(121px, 0px); }
+#tile-position-2-2 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(121px, 121px);
+  -moz-transform: translate(121px, 121px);
+  transform: translate(121px, 121px); }
+#tile-position-2-3 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(121px, 242px);
+  -moz-transform: translate(121px, 242px);
+  transform: translate(121px, 242px); }
+#tile-position-2-4 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(121px, 363px);
+  -moz-transform: translate(121px, 363px);
+  transform: translate(121px, 363px); }
+#tile-position-3-1 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(242px, 0px);
+  -moz-transform: translate(242px, 0px);
+  transform: translate(242px, 0px); }
+#tile-position-3-2 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(242px, 121px);
+  -moz-transform: translate(242px, 121px);
+  transform: translate(242px, 121px); }
+#tile-position-3-3 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(242px, 242px);
+  -moz-transform: translate(242px, 242px);
+  transform: translate(242px, 242px); }
+#tile-position-3-4 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(242px, 363px);
+  -moz-transform: translate(242px, 363px);
+  transform: translate(242px, 363px); }
+#tile-position-4-1 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(363px, 0px);
+  -moz-transform: translate(363px, 0px);
+  transform: translate(363px, 0px); }
+#tile-position-4-2 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(363px, 121px);
+  -moz-transform: translate(363px, 121px);
+  transform: translate(363px, 121px); }
+#tile-position-4-3 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(363px, 242px);
+  -moz-transform: translate(363px, 242px);
+  transform: translate(363px, 242px); }
+#tile-position-4-4 {
+    width: 107px;
+    height: 107px;
+  -webkit-transform: translate(363px, 363px);
+  -moz-transform: translate(363px, 363px);
+  transform: translate(363px, 363px); }
+
+  .tile {
+    position: absolute;
+    -webkit-transition: 100ms ease-in-out;
+    -moz-transition: 100ms ease-in-out;
+    transition: 100ms ease-in-out;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform; }
+    .tile-2  {
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      background: #eee4da;
+      box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    .tile-4{
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      background: #ede0c8;
+      box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    .tile-8 {
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      color: #f9f6f2;
+      background: #f2b179; }
+    .tile-16{
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      color: #f9f6f2;
+      background: #f59563; }
+    .tile-32  {
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      color: #f9f6f2;
+      background: #f67c5f; }
+    .tile-64  {
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      color: #f9f6f2;
+      background: #f65e3b; }
+    .tile-128 {
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      color: #f9f6f2;
+      background: #edcf72;
+      box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+      font-size: 45px; }
+      @media screen and (max-width: 520px) {
+        .tile.tile-128 .tile-inner {
+          font-size: 25px; } }
+    .tile-256{
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      color: #f9f6f2;
+      background: #edcc61;
+      box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+      font-size: 45px; }
+      @media screen and (max-width: 520px) {
+        .tile.tile-256 .tile-inner {
+          font-size: 25px; } }
+    .ttil-512 {
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      color: #f9f6f2;
+      background: #edc850;
+      box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+      font-size: 45px; }
+      @media screen and (max-width: 520px) {
+        .tile.tile-512 .tile-inner {
+          font-size: 25px; } }
+    .tile-1024{
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      color: #f9f6f2;
+      background: #edc53f;
+      box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+      font-size: 35px; }
+      @media screen and (max-width: 520px) {
+        .tile.tile-1024 .tile-inner {
+          font-size: 15px; } }
+    .tile-2048 {
+      position: absolute;
+      border-radius: 3px;
+      font-weight: bold;
+      z-index: 10;
+      font-size: 55px;
+      text-align: center;
+      color: #f9f6f2;
+      background: #edc22e;
+      box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+      font-size: 35px; }
+      @media screen and (max-width: 520px) {
+        .tile.tile-2048 .tile-inner {
+          font-size: 15px; } }
+    .tile.tile-super .tile-inner {
+      color: #f9f6f2;
+      background: #3c3a32;
+      font-size: 30px; }
+      @media screen and (max-width: 520px) {
+        .tile.tile-super .tile-inner {
+          font-size: 10px; } }
